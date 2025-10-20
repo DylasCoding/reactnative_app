@@ -22,7 +22,7 @@ This app follows the Pomodoro technique: work for a fixed period (**25 minutes**
 
 ### 1. Work Timer
 <p align="center">
-  <img src="/img/work1.png" alt="Work Timer 1" width="47%" />
+  <img src="/img/work1.png" alt="Work Timer 1" width="47.5%" />
   <img src="/img/work2.png" alt="Work Timer 2" width="45%" />
 </p>
 
@@ -34,7 +34,7 @@ This app follows the Pomodoro technique: work for a fixed period (**25 minutes**
 
 ### 2. Break Timer
 <p align="center">
-  <img src="/img/work1.png" alt="Break Timer 1" width="47%" />
+  <img src="/img/work1.png" alt="Break Timer 1" width="47.5%" />
   <img src="/img/work2.png" alt="Break Timer 2" width="45%" />
 </p>
 
