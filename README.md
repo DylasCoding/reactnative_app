@@ -1,50 +1,79 @@
-# Welcome to your Expo app 👋
+# 🕒 Task Timer (Basic Pomodoro)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Get started
+## 📖 Project Overview
+**Task Timer** is a simple **Pomodoro-style productivity app** built with Expo.  
+It helps users manage their work and rest cycles effectively through a timer system with notifications and history tracking.  
+This app follows the Pomodoro technique: work for a fixed period (**25 minutes**) and take a short break (**5 minutes**) to boost focus and efficiency.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🧰 Tech Stack
+- **Framework:** Expo (React Native)
+- **Notifications:** `expo-notifications`
+- **Screen Wake Lock:** `expo-keep-awake`
+- **Vibration Feedback:** `expo-haptics`
+- **Local Storage:** `AsyncStorage`
+- **Chart Visualization (optional):** Simple chart library for session statistics
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## ⚙️ Core Features
 
-In the output, you'll find options to open the app in a
+### 1. Work Timer
+<p align="center">
+  <img src="/img/work1.png" alt="Work Timer 1" width="47%" />
+  <img src="/img/work2.png" alt="Work Timer 2" width="45%" />
+</p>
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- Work mode duration: **25 minutes**
+- Helps maintain focus and productivity.
+- Countdown continues even when the app is in the background.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+### 2. Break Timer
+<p align="center">
+  <img src="/img/work1.png" alt="Break Timer 1" width="47%" />
+  <img src="/img/work2.png" alt="Break Timer 2" width="45%" />
+</p>
 
-When you're ready, run:
+- Break mode duration: **5 minutes**
+- Encourages relaxation and recovery after each work session.
+- Automatically switches back to work mode when finished.
 
+---
+
+### 3. Notifications
+![Notification Example](/img/Notifications.png)
+- Sends notifications when a work or break session ends.
+- Optionally includes haptic feedback for a better user experience.
+
+---
+
+### 4. Session History
+![History Screen](/img/DailySessionChart.png)
+- Saves completed sessions locally using **AsyncStorage**.
+- Displays previous work/break sessions for daily tracking.
+
+---
+
+## 🚀 Extended Features
+
+### ⏱ Custom Timer Settings
+![Custom Timer Screen](/img/custom.png)
+- Allows users to customize work and break durations to fit personal preferences.
+
+---
+
+### 📊 Daily Session Chart
+![Chart Screen](/img/DailySessionChart.png)
+- Visualizes the number of sessions completed per day.
+- Helps track productivity trends over time.
+
+---
+
+## ▶️ Run the App
+To start the app on Android, use the following command:
 ```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+npx expo start --android
